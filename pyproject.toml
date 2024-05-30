@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "trimesh-bug"
+description = "Trimesh obj export bug"
+authors = ["Amin Yahyaabadi <amin@sanctuary.ai>"]
+license = "Private"
+version = "0.1.0"
+keywords = []
+
+[tool.poetry.dependencies]
+python = "~3.10.0"
+trimesh = "4.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.7.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+typeCheckingMode = "basic"
+reportUnboundVariable = "error"
+reportPossiblyUnboundVariable = "error"
+reportUnknownParameterType = "warning"
